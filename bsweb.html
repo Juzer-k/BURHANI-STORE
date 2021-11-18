@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>BURHANI-STORE</title>
+</head>
+
+<body>
+  <!-- navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="bsweb.html">BURHANI STORE's</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="bsweb.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">B-pay</a></li>
+              <li><a class="dropdown-item" href="#">Online Trading</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something More About Us</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <div class="mx-2">
+          <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">Log In </button>
+          <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2nd navigation bar for search -->
+
+  <nav class="navbar navbar-light bg-dark">
+    <div class="container-fluid mx-5 ">
+      <div class=" position-relative"></div>
+      <form class="d-flex float-medium">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" width="500px">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+    </div>
+    </form>
+    </div>
+  </nav>
+
+  <!--login pop up/ Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login To Burhani Store</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3 row">
+            <label for="inputEmail" class="col-sm-2 col-form-label">Email Id</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword">
+            </div><br><br>
+          </div>
+          <button type="submit" class="btn btn-success center">Log In </button>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--sign up pop up/ Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Create Burhani Store Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3 row">
+            <label for="inputEmail" class="col-sm-2 col-form-label">Email Id</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail">
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="inputnumber" class="col-sm-2 col-form-label">Mobile Number</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="inputnumber">
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="inputtext" class="col-sm-2 col-form-label">Username</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputtext">
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword">
+            </div><br>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="inputPassword1" class="col-sm-2 col-form-label"> Confirm Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword1">
+            </div><br><br>
+          </div>
+
+
+          <button type="submit" class="btn btn-success center ">Create Account </button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- silder -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators my-4">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="container-fluid my-4">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://source.unsplash.com/1400x900/?shopping,ecommerce" height="500px" class="d-block w-100"
+            alt="...">
+
+          <div class="carousel-caption d-none d-md-block">
+            <h2>WELCOME TO BURHANI STORE</h2>
+            <p>BEST PLACE FOR ONLINE SHOPPING</p>
+            <a href="comingsoon.html" aria-current="page"> <button class="btn btn-success">Coming Soon</button></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://source.unsplash.com/1400x900/?men-shirts,men-pant" height="500px" class="d-block w-100"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>WELCOME TO BURHANI STORE</h2>
+            <p>BEST PLACE FOR ONLINE SHOPPING</p>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://source.unsplash.com/1400x900/?gold,braclet" height="500px" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>WELCOME TO BURHANI STORE</h2>
+            <p>BEST PLACE FOR ONLINE SHOPPING</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- boxes for products -->
+  <div class="contanier-fluid">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://source.unsplash.com/1400x650/?mobiles">
+          <div class="card-body">
+            <p class="card-text">
+            <h2>Get UpTo 70% Off </h2>
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="productpage.html"><button type="button" class="btn btn-sm btn-success ">Check It Out</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://source.unsplash.com/1400x650/?technology">
+          <div class="card-body">
+            <p class="card-text">
+            <h2> 20% Off On Product</h2>
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="productpage.html"> <button type="button" class="btn btn-sm btn-success">Check It Out</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://source.unsplash.com/1400x650/?frame">
+          <div class="card-body">
+            <p class="card-text">
+            <h2>Get UpTo 50%-75%</h2>
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="productpage.html"> <button type="button" class="btn btn-sm btn-success">Check It Out</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://source.unsplash.com/1400x650/?books">
+          <div class="card-body">
+            <p class="card-text">
+            <h2>Flat 50% Off</h2>
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="productpage.html"> <button type="button" class="btn btn-sm btn-success">Check It Out</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://source.unsplash.com/1400x650/?pants,shirts">
+          <div class="card-body">
+            <p class="card-text">
+            <h2>Get UpTo 80% Off</h2>
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="productpage.html"> <button type="button" class="btn btn-sm btn-success">Check It Out</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://source.unsplash.com/1400x650/?devices,charger">
+          <div class="card-body">
+            <p class="card-text">
+            <h2>50% Off On Product</h2>
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="productpage.html"> <button type="button" class="btn btn-sm btn-success">Check It Out</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://source.unsplash.com/1400x650/?headphone,ipod">
+          <div class="card-body">
+            <p class="card-text">
+            <h2>Get UpTo 30% Off On Product</h2>
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="productpage.html"><button type="button" class="btn btn-sm btn-success">Check It Out</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://source.unsplash.com/1400x650/?computer,laptop">
+          <div class="card-body">
+            <p class="card-text">
+            <h2>Get UpTo 50% Off On Product</h2>
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="productpage.html"> <button type="button" class="btn btn-sm btn-success">Check It Out</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://source.unsplash.com/1400x650/?gold,braclet"></a>
+          <div class="card-body">
+            <p class="card-text">
+            <h2>Get Hot Deals On Product</h2>
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="productpage.html"><button type="button" class="btn btn-sm btn-success">Check It Out</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- more  boxes for product -->
+
+  <div class="container-fluid" id="custom-cards">
+    <h2 class="pb-5 border-bottom my-5" style="color:yellowgreen; font-size: 40px;font-weight: bold;">Get More Hot Deals On..</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-2">
+      <div class="col ">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+          <a href="#" style="text-decoration: none; ">
+            <img src="https://source.unsplash.com/500x300/?shopping,ecommerce" alt="" height="300px">
+
+            <div class="d-flex flex-column text-white text-shadow-1">
+              <h2 class=" fw-bold" style="color: goldenrod;">Get 50%-80% Off On This Product's</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+        <a href="#" style="text-decoration: none;">
+          <img src="https://source.unsplash.com/500x300/?discount" alt="" height="300px">
+          <h2 class=" fw-bold" style="color: goldenrod;">Get 30%-50% Off On This Product's</h2>
+        </a>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+        <a href="#" style="text-decoration: none;">
+          <img src="https://source.unsplash.com/500x300/?frames" alt="" height="300px">
+          <h2 class=" fw-bold" style="color: goldenrod;">Get 80%-90% Off On This Product's</h2>
+        </a>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+        <a href="#" style="text-decoration: none;">
+          <img src="https://source.unsplash.com/500x300/?phone" alt="" height="300px">
+          <h2 class=" fw-bold" style="color: goldenrod;">Get 50%-75% Off On This Product's</h2>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+        <a href="#" style="text-decoration: none;">
+          <img src="https://source.unsplash.com/500x300/?bedsheets" alt="" height="300px">
+          <h2 class=" fw-bold" style="color: goldenrod;">Get 30% Off On This Product's</h2>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+        <a href="#" style="text-decoration: none;">
+          <img src="https://source.unsplash.com/500x300/?shopping,books" alt="" height="300px">
+          <h2 class=" fw-bold" style="color: goldenrod;">Get 40% Off On This Product's</h2>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+        <a href="#" style="text-decoration: none;">
+          <img src="https://source.unsplash.com/500x300/?wafers,chips" alt="" height="300px">
+          <h2 class=" fw-bold" style="color: goldenrod;">Get 50%-80% Off On This Product's</h2>
+        </a>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
+        <a href="#" style="text-decoration: none;">
+          <img src="https://source.unsplash.com/500x300/?biscuit" alt="" height="300px">
+          <h2 class=" fw-bold" style="color: goldenrod;">Get 60% Off On This Product's</h2>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="col ">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+        style="box-shadow: 5px 3px 4px 5px black; ">
+        <a href="#" style="text-decoration: none;">
+          <img src="https://source.unsplash.com/500x300/?shopping,ecommerce" alt="" height="300px">
+          <div class="">
+            <h2 class=" fw-bold" style="color: goldenrod;">Get 50%-80% Off On This Product's</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- footer -->
+  <div class="footer my-4 bg-light">
+    <footer class="container">
+      <p class="float-end my-4"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+          </svg>Back to top</a></p>
+      <p>© J.K PVT LTD · </p>
+      <p>Toda's Time ==>><span id="time"></span></p><br>
+      <p>Toda's date ==>><span id="date"></span>
+      </p>
+    </footer>
+  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+<script>
+  let a;
+  let time;
+  setInterval(() => {
+    a = new Date();
+    time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
+    document.getElementById('time').innerHTML = time;
+  }, 1000);
+  let b;
+  let date;
+  setInterval(() => {
+    b = new Date();
+    date = b.getDay() + "-" + b.getMonth() + "-" + b.getFullYear();
+    document.getElementById('date').innerHTML = date;
+  }, 1000);
+</script>
+
+</html>
